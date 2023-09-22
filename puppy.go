@@ -1,13 +1,15 @@
 package puppy
 
 import (
-	"fmt"
-
 	"github.com/kevinrosenfield/dog"
 )
 
-func Bark() {
+func Bark() (string, string) {
 	dogBark := dog.Bark()
+	return "Woof", dogBark
+}
 
-	fmt.Println(dogBark)
+func Barks() string {
+	dogBarks := dog.Barks()
+	return dogBarks
 }
