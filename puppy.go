@@ -1,5 +1,13 @@
 package puppy
 
-func Bark() string {
-	return "Woof"
+import (
+	"fmt"
+
+	"github.com/kevinrosenfield/dog"
+)
+
+func Bark() {
+	dogBark := dog.Bark()
+
+	fmt.Println(dogBark)
 }
